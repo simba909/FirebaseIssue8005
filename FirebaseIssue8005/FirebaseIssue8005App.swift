@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FirebaseIssue8005App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
