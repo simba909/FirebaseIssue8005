@@ -65,6 +65,7 @@
 		F40BEA832668CE6000E027E1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F40BEA852668D08C00E027E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F40BEA872668D3B100E027E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F40BEA892668D55400E027E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		F40BEA2C2668C77100E027E1 = {
 			isa = PBXGroup;
 			children = (
+				F40BEA892668D55400E027E1 /* README.md */,
 				F40BEA372668C77100E027E1 /* FirebaseIssue8005 */,
 				F40BEA592668C7F100E027E1 /* Frameworks */,
 				F40BEA362668C77100E027E1 /* Products */,
