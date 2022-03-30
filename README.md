@@ -1,11 +1,9 @@
 #  Firebase issue 8005 sample
 
-This sample project uses the semi-recently release Firebase 8.0.0 Zip distribution with the following SDKs:
+This sample project uses the semi-recently release Firebase 8.14.0 SPM distribution (via the [awesome SPM distribution by akaffenberger](https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks)) with the following SDKs:
 
  - FirebaseAnalytics
- - FirebaseDatabase
  - FirebaseFirestore
- - FirebaseStorage
 
 along with all the necessary dependencies for each SDK. The `-ObjC` linker flag is also set.
 
@@ -13,17 +11,20 @@ Steps to reproduce the issue:
 
  - Add a valid `Google-Info.plist` file for a Firebase project to the Xcode project navigator
  - Open `ContentView.swift`
- - In the preview pane on the right hand side, click the little "Play" icon on the top left of the simulator (after first clicking the "Resume" button)
+ - ~In the preview pane on the right hand side, click the little "Play" icon on the top left of the simulator (after first clicking the "Resume" button)~
+    - As of Xcode 13.3, simply opening `ContentView.swift` with the Preview Pane open will trigger the issue and a "Problem Report for FirebaseIssue8005" window will open with the details of the crash.
  
-This should try to start the live SwiftUI preview, which in most cases will crash. If it doesn't crash immediately try
+~This should try to start the live SwiftUI preview, which in most cases will crash. If it doesn't crash immediately try
 running the app in the simulator, then try the previews again. Sometimes it requires a little bit of back-and-forth
-before the issue reproduces, but after the first time it will happen repeatedly.
+before the issue reproduces, but after the first time it will happen repeatedly.~
 
-Usually the SwiftUI preview doesn't show you _why_ it crashed, so you need to look for the crash logs in:
+~Usually the SwiftUI preview doesn't show you _why_ it crashed, so you need to look for the crash logs in:~
 
-`~/Library/Logs/DiagnosticReports`
+~`~/Library/Logs/DiagnosticReports`~
 
-where they will be named `FirebaseIssue8005_<date>_<hostname>.crash` (for this project).
+~where they will be named `FirebaseIssue8005_<date>_<hostname>.crash` (for this project).~
+
+Edit: As of Xcode 13.3 there is no longer a need to go looking for the crash report - it will show up automatically.
 
 Video that shows the issue:
 
